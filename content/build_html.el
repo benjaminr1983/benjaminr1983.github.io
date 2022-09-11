@@ -23,12 +23,12 @@
 	      :recursive t
 	      :base-directory "./content"
 	      :publishing-directory "./public"
-	     :publishing-function 'org-html-publish-to-html
-	     :with-author nil              ;; do not include the name of the author
-	     :with-creator t               ;; include emacs/org versions in the footer
-	     :with-toc t                     ;; include table of contents
-	     :section-numbers nil       ;; do not include section numbers
-	     :time-stamp-file nil)))     ;; do notinclude a time stamp in the file
+	      :publishing-function 'org-html-publish-to-html
+	      :with-author nil              ;; do not include the name of the author
+	      :with-creator t               ;; include emacs/org versions in the footer
+	      :with-toc t                     ;; include table of contents
+	      :section-numbers nil       ;; do not include section numbers
+	      :time-stamp-file nil)))     ;; do notinclude a time stamp in the file
 ;; generate the site output
 (org-publish-all t)
 (message "html is generated!")
